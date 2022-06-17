@@ -67,3 +67,7 @@ test/test_folders.zip
 # Files that can be automatically downloaded that we don't want to ship with our builds
 /src/extensibility/node/node_modules/request/tests/
 
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
+branch_structure.json
