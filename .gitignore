@@ -32,6 +32,7 @@ src/extensions/default/Phoenix-live-preview/thirdparty
 # ignore compiled files
 /dist
 /src/.index.html
+temp_auto_push.bat
 /src/styles/brackets.min.css
 /src/styles/brackets.min.css.map
 /src/assets/default-project/*.zip
@@ -67,3 +68,5 @@ test/test_folders.zip
 # Files that can be automatically downloaded that we don't want to ship with our builds
 /src/extensibility/node/node_modules/request/tests/
 
+.gitignore
+branch_structure.json
