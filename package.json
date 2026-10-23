@@ -1,77 +1,11 @@
 {
-  "name": "phoenix",
-  "version": "2.0.0-0",
-  "apiVersion": "2.0.0",
-  "homepage": "https://core.ai",
-  "issues": {
-    "url": "https://github.com/phcode-dev/phoenix/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/phcode-dev/phoenix.git",
-    "branch": "",
-    "SHA": ""
-  },
-  "devDependencies": {
-    "@commitlint/cli": "^16.0.2",
-    "@commitlint/config-conventional": "^16.0.0",
-    "aws-sdk": "^2.1155.0",
-    "del": "^6.0.0",
-    "documentation": "^13.2.5",
-    "eslint": "^7.32.0",
-    "glob": "^8.0.3",
-    "gulp": "^4.0.2",
-    "gulp-concat": "^2.6.1",
-    "gulp-cssnano": "^2.1.3",
-    "gulp-flatten": "^0.4.0",
-    "gulp-if": "^3.0.0",
-    "gulp-rename": "^2.0.0",
-    "gulp-uglify": "^3.0.2",
-    "gulp-useref": "^5.0.0",
-    "gulp-webserver": "^0.9.1",
-    "gulp-zip": "^5.1.0",
-    "http-server": "14.1.0",
-    "husky": "^7.0.4",
-    "lodash": "^4.17.21",
-    "merge-stream": "^2.0.0",
-    "readable-stream": "^3.6.0",
-    "requirejs": "^2.3.6",
-    "through2": "^4.0.2"
-  },
-  "scripts": {
-    "eslint": "npm run lint",
-    "eslint:fix": "npm run lint:fix",
-    "lint": "eslint --quiet src test",
-    "lint:fix": "eslint --quiet --fix src test",
-    "prepare": "husky install",
-    "test": "gulp test",
-    "buildonly": "gulp build",
-    "build": "node api.js && npm run buildonly && npm run createJSDocs && npm run test && npm run lint",
-    "clean": "gulp clean",
-    "reset": "gulp reset",
-    "release:dev": "gulp releaseDev",
-    "release:staging": "gulp releaseStaging",
-    "release:prod": "gulp releaseProd",
-    "serve": "http-server . -p 8000 -c-1",
-    "serveExternal": "http-server . -p 8000 -a 0.0.0.0 --log-ip true -c-1",
-    "createJSDocs": "gulp createJSDocs && git add docs",
-    "translateStrings": "gulp translateStrings",
-    "minify": "r.js -o require.min.config.js && echo this is untested see https://stackoverflow.com/questions/14337970/minifying-requirejs-javascript-codebase-to-a-single-file"
-  },
-  "licenses": [
-    {
-      "type": "AGPL-3.0-or-later",
-      "url": "https://github.com/phcode-dev/phoenix/blob/master/LICENSE"
-    }
-  ],
+  "name": "brackets-src",
   "dependencies": {
-    "@floating-ui/dom": "^0.5.3",
-    "@phcode/fs": "^1.0.10",
-    "browser-mime": "^1.0.1",
-    "jszip": "^3.7.1",
-    "marked": "^4.0.14",
-    "mime-db": "^1.52.0",
-    "prettier": "^2.6.1",
-    "underscore": "^1.13.2"
+    "acorn": "5.1.1",
+    "codemirror": "5.58.2",
+    "less": "2.7.2",
+    "preact": "8.2.1",
+    "preact-test-utils": "0.1.3",
+    "preact-compat": "adobe/preact-compat"
   }
 }
